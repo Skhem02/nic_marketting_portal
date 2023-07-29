@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vegetable Inquiry - Result</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='3a.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div id="messageContainer">
+      {% if error_message %}
+        <div class="message system-message">{{ error_message }}</div>
+      {% else %}
+        <div class="message system-message">
+          <strong>Price:</strong> {{ price }}<br>
+          <strong>Market:</strong> {{ market }}<br>
+          <strong>Season:</strong> {{ season }}<br>
+         <!--<strong>Growing Season:</strong> {{ growing_season }}<br>--> 
+          <strong>Next Year Price:</strong> {{ next_year_price }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="inputContainer">
+      <input type="text" id="userInput" placeholder="Type a vegetable...">
+      <button class="rounded-button" onclick="sendMessage()">Send</button>
+      <button id="resetButton" class="rounded-button" onclick="resetChat()" disabled>Reset</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Data Analysis</h1>
+    <div class="analysis-container">
+      <img src="{{ analysis_image }}" alt="Data Analysis Image">
+    </div>
+    <a href="/" class="rounded-button">Go Back</a> <!-- Update the link here -->
+  </div>
+
+
+  <script src="static/3a.js"></script>
+</body>
+</html>

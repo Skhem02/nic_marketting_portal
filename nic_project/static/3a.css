@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: skyblue;
+    position: relative;
+  }
+  
+  #messageContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .user-message {
+    text-align: right;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .system-message {
+    text-align: left;
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .inputSection {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .rounded-button {
+    border-radius: 50%;
+  }
+  
+  #resetButton {
+    margin-right: 10px;
+  }
+  
+/* Add any custom CSS styles here */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  min-height: 100%;
+}
+
+/* Adjust the margin for the form container */
+#formContainer {
+  margin-top: 10px;
+}
+
+/* Adjust the margin for the plot container */
+#plotDiv {
+  margin-top: 20px;
+  max-height: calc(100vh - 230px); /* Set a max height for the plot container to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Make commodity and year in the same line */
+.form-row {
+  align-items: center;
+}
+

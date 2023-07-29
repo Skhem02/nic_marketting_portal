@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vegetable Inquiry - Error</title>
+  <link rel="stylesheet" type="text/css" href="static/3a.css">
+</head>
+<body>
+  <div class="container">
+    <div id="messageContainer">
+      <div class="message system-message">{{ error_message }}</div>
+    </div>
+    <div class="inputContainer">
+      <input type="text" id="userInput" placeholder="Type a vegetable...">
+      <button class="rounded-button" onclick="sendMessage()">Send</button>
+      <button id="resetButton" class="rounded-button" onclick="resetChat()" disabled>Reset</button>
+    </div>
+  </div>
+
+  <script src="static/3a.js"></script>
+</body>
+</html>

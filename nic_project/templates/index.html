@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vegetable Inquiry</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='3a.css') }}">
+  
+  <style>
+    .market-study-link {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+      padding: 0.25rem 0.5rem;
+    }
+    .rounded-button {
+      margin: 5px;
+      border-radius: 20px; /* Add border-radius to make the button round */
+    }
+    .inputContainer {
+      margin-top: 50px; /* Add margin to push the content below the button */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="messageContainer"></div>
+    <div class="inputContainer">
+      <input type="text" id="userInput" placeholder="Type a vegetable...">
+      <button class="rounded-button" onclick="sendMessage()">Send</button>
+      <button id="resetButton" class="rounded-button" onclick="resetChat()" disabled>Reset</button>
+      <!-- Replace this line with the Market Study button code -->
+      <a href="/analysis" class="btn btn-primary market-study-link btn-round style="display: inline-block;">Market Study</a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='3a.js') }}"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
